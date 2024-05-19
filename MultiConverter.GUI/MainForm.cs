@@ -124,6 +124,9 @@ namespace MultiConverter.GUI
                     // else if (filename.EndsWith("anim"))
                     //     converter = new AnimConverter(filename);
 
+                    if (converter == null)
+                        continue; // we need to return an error or something here. this is just a temporary band aid for if the converter object is null.
+
                     converter.Read(File.ReadAllBytes(filename));
                     converter.Write(filename);
 
