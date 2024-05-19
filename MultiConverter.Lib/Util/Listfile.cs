@@ -10,7 +10,7 @@ namespace MultiConverter.Lib
         private static WebClient webClient = new WebClient();
         private static string buildConfig = "";
         private static string listfile = "listfile.csv";
-        private static string listUrl = "https://wow.tools/casc/listfile/download/csv/unverified";
+        private static string listUrl = "https://github.com/wowdev/wow-listfile/releases/download/202405151131/community-listfile-withcapitals.csv";
         private static Dictionary<uint, string> FiledataPair = new Dictionary<uint, string>();
 
         public static bool IsInitialized = false;
