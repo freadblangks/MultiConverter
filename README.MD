@@ -1,6 +1,7 @@
 # Multiconverter - WoW 3.3.5a
 ## Information
 Originally written by [Adspartan](https://github.com/Adspartan "Adspartan's Github")
+Forked from [MaxtorCoders contributions](https://github.com/MaxtorCoder "MaxtorCoder's Github")
 
 ## Support
 For support please go to the Discord linked at the bottom, and go to the #support channel. 😄
@@ -13,7 +14,7 @@ If the .skin files are in the same folder they will be converted too.
 * Visual Studio 2019 (.NET Core 3.1)
 
 ## File Support
-| Format   | BFA (Above 26629)| Shadowlands |
+| Format   | BFA (Above 26629)| Shadowlands+|
 |:--------:|:----------------:|:-----------:|
 |    M2    | ✔️               |✔️          |
 |    WMO   | ✔️               |❌          |
@@ -24,9 +25,8 @@ If the .skin files are in the same folder they will be converted too.
 * Animation particles
 * Set WMOs liquid types that correspond when the ID is too high
 * Set fel liquid to green lava on adt for a better / more accurate look
-* ADT BFA support
-* WDT BFA support
+* ADT BFA + support
+* WDT BFA + support
 
 ## Links
-- [Discord](https://discord.gg/vcpwDVN)
-- [Model Changing](https://model-changing.net/)
+- [Discord](https://discord.gg/vcpwDVN) via the support channels.

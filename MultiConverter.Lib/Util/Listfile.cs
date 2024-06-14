@@ -10,7 +10,8 @@ namespace MultiConverter.Lib
         private static WebClient webClient = new WebClient();
         private static string buildConfig = "";
         private static string listfile = "listfile.csv";
-        private static string listUrl = "https://wow.tools/casc/listfile/download/csv/unverified";
+        //private static string listUrl = "https://github.com/wowdev/wow-listfile/releases/download/202405151131/community-listfile-withcapitals.csv";
+        private static string listUrl = "https://github.com/wowdev/wow-listfile/releases/latest/download/community-listfile.csv";
         private static Dictionary<uint, string> FiledataPair = new Dictionary<uint, string>();
 
         public static bool IsInitialized = false;
@@ -82,7 +83,11 @@ namespace MultiConverter.Lib
                     else
                     {
                         Console.WriteLine($"Downloading: {newFilename} (Id: {id})");
-                        webClient.DownloadFile($"https://wow.tools/casc/file/fdid?buildconfig={buildConfig}&filename={newFilename}&filedataid={id}", pathName);
+                        // Old URL
+                        // webClient.DownloadFile($"https://wow.tools/casc/file/fdid?buildconfig={buildConfig}&filename={newFilename}&filedataid={id}", pathName);
+
+                        // New URL
+                        webClient.DownloadFile($"https://wago.tools/files/download?buildconfig={buildConfig}&filename={newFilename}&filedataid={id}", pathName);
                     }
 
                     return pathName;
